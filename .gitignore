@@ -1,0 +1,4 @@
+# Prevent credential leakage
+.env
+*.env
+
