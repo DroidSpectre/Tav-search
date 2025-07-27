@@ -20,7 +20,7 @@ LLM_CONFIG = {
     "n_ctx": 6144,
     "n_threads": 4,
     "temperature": 0.7,
-    "max_tokens": 2048
+    "max_tokens": 6144
 }
 
 # Search Configuration

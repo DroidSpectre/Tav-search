@@ -43,13 +43,37 @@ CONTENT_PREVIEW_CHARS: int = 2000
 COMPLETENESS_THRESHOLD: int = 7
 SIMILARITY_THRESHOLD: float = 0.8
 CREDIBLE_DOMAINS: Tuple[str, ...] = (
-    "arxiv.org",
-    "wikipedia.org",
-    "nytimes.com",
-    "nature.com",
-    "acm.org",
-    "ieee.org",
+    # Current domains
+    "arxiv.org", "wikipedia.org", "nytimes.com", "nature.com", "acm.org", "ieee.org",
+    
+    # Major news wire services
+    "reuters.com", "ap.org", "bloomberg.com",
+    
+    # International quality news
+    "bbc.com", "theguardian.com", "ft.com", "economist.com",
+    
+    # U.S. national papers
+    "wsj.com", "washingtonpost.com", "usatoday.com",
+    
+    # Public media
+    "npr.org", "pbs.org", "c-span.org",
+    
+    # Quality journalism
+    "propublica.org", "theatlantic.com", "newyorker.com",
+    
+    # Government sources
+    "nih.gov", "cdc.gov", "nasa.gov", "noaa.gov",
+    
+    # Academic domains
+    "mit.edu", "harvard.edu", "stanford.edu", "berkeley.edu", "ox.ac.uk", "cam.ac.uk",
+    
+    # International organizations
+    "un.org", "who.int", "worldbank.org", "imf.org", "europa.eu",
+    
+    # Scientific journals
+    "science.org", "nejm.org", "cell.com", "plos.org"
 )
+
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
